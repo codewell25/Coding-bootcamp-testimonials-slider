@@ -56,7 +56,7 @@ main {
 }
 
 #candidate-img img {
-  width: 500px;
+  width: 100%;
 }
 
 .btns {
@@ -91,8 +91,37 @@ main {
 }
 
 .pattern-img-2 {
+  display: block;
   position: absolute;
   top: 90px;
   left: 105px;
+}
+
+.pattern-img-2-mob {
+  display: none;
+}
+
+@media (min-width: 786px) and (max-width: 1020px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .content {
+    margin-top: 150px;
+  }
+  .btns {
+    left: 200px;
+  }
+  .pattern-img-2 {
+    display: none;
+  }
+  .pattern-img-2-mob {
+    display: block;
+    position: absolute;
+    bottom: 220px;
+    left: 200px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
